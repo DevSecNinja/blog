@@ -25,7 +25,7 @@ jobs:
         with:
           install: true
           # renovate: datasource=github-releases depName=jdx/mise
-          version: 2026.4.3
+          version: 2026.4.15
 
       - name: Check formatting with dprint
         run: mise exec -- dprint check
@@ -44,7 +44,7 @@ jobs:
         with:
           install: true
           # renovate: datasource=github-releases depName=jdx/mise
-          version: 2026.4.3
+          version: 2026.4.15
 
       - name: Check YAML formatting
         run: find . \( -name '*.yaml' -o -name '*.yml' \) -print0 | xargs -0 mise exec -- yamlfmt -lint
@@ -63,7 +63,7 @@ jobs:
         with:
           install: true
           # renovate: datasource=github-releases depName=jdx/mise
-          version: 2026.4.3
+          version: 2026.4.15
 
       - name: Run actionlint
         run: mise exec -- actionlint
@@ -83,7 +83,7 @@ jobs:
         with:
           install: true
           # renovate: datasource=github-releases depName=jdx/mise
-          version: 2026.4.3
+          version: 2026.4.15
 
       - name: Run gitleaks
         run: mise exec -- gitleaks detect --redact
@@ -102,7 +102,7 @@ jobs:
         with:
           install: true
           # renovate: datasource=github-releases depName=jdx/mise
-          version: 2026.4.3
+          version: 2026.4.15
 
       - name: Run shellcheck
         run: find . -name '*.sh' -print0 | xargs -0 --no-run-if-empty mise exec -- shellcheck
@@ -121,7 +121,7 @@ jobs:
         with:
           install: true
           # renovate: datasource=github-releases depName=jdx/mise
-          version: 2026.4.3
+          version: 2026.4.15
 
       - name: Run shfmt
         run: find . -name '*.sh' -print0 | xargs -0 --no-run-if-empty mise exec -- shfmt --diff
@@ -140,7 +140,7 @@ jobs:
         with:
           install: true
           # renovate: datasource=github-releases depName=jdx/mise
-          version: 2026.4.3
+          version: 2026.4.15
 
       - name: Run yamllint
         run: find . \( -name '*.yaml' -o -name '*.yml' \) -print0 | xargs -0 mise exec -- yamllint
@@ -162,7 +162,7 @@ jobs:
         with:
           install: true
           # renovate: datasource=github-releases depName=jdx/mise
-          version: 2026.4.3
+          version: 2026.4.15
 
       - name: Run zizmor
         run: mise exec -- zizmor --format sarif . > zizmor.sarif
@@ -189,7 +189,7 @@ jobs:
         with:
           install: true
           # renovate: datasource=github-releases depName=jdx/mise
-          version: 2026.4.3
+          version: 2026.4.15
 
       - name: Build with Hugo
         env:
