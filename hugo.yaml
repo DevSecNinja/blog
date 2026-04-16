@@ -37,8 +37,6 @@ params:
     enabled: true
     title: "Jean-Paul van Ravensberg"
     subtitle: "Posts on Microsoft Azure, IoT, Security & Automation"
-    imageUrl: "/images/profile/jean-paul_van_ravensberg.jpeg"
-    imageTitle: "Jean-Paul van Ravensberg"
     buttons:
       - name: Posts
         url: /posts/
@@ -98,10 +96,6 @@ menu:
       name: About
       url: /about/
       weight: 2
-    - identifier: speaking
-      name: Speaking
-      url: /speaking/
-      weight: 3
     - identifier: tags
       name: Tags
       url: /tags/
