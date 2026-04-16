@@ -34,7 +34,7 @@ params:
   dateFormat: "02-01-2006"
 
   profileMode:
-    enabled: true
+    enabled: false
     title: "Jean-Paul van Ravensberg"
     subtitle: "Posts on Microsoft Azure, IoT, Security & Automation"
     buttons:
