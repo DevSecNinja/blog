@@ -1,0 +1,33 @@
+---
+area/content:
+  - changed-files:
+      - any-glob-to-any-file:
+          - content/**/*
+
+area/config:
+  - changed-files:
+      - any-glob-to-any-file:
+          - hugo.yaml
+          - go.mod
+          - go.sum
+
+area/github:
+  - changed-files:
+      - any-glob-to-any-file:
+          - .github/**/*
+
+area/renovate:
+  - changed-files:
+      - any-glob-to-any-file:
+          - renovate.json5
+          - .renovate/**/*
+
+area/tooling:
+  - changed-files:
+      - any-glob-to-any-file:
+          - .mise.toml
+          - .lefthook.toml
+          - .yamlfmt.yaml
+          - .yamllint.yaml
+          - .markdownlint.yaml
+          - dprint.json

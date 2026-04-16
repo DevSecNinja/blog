@@ -1,0 +1,122 @@
+---
+baseURL: "https://devsecninja.com/"
+languageCode: en
+defaultContentLanguage: en
+title: "Jean-Paul van Ravensberg | Azure, IoT, Security & Automation"
+enableRobotsTXT: true
+
+permalinks:
+  posts: "/:year/:month/:day/:title/"
+
+sitemap:
+  changefreq: monthly
+  priority: 0.5
+  filename: sitemap.xml
+
+taxonomies:
+  tag: tags
+
+module:
+  imports:
+    - path: github.com/adityatelange/hugo-PaperMod
+
+params:
+  env: production
+  description: "Posts on Microsoft Azure, IoT, Security & Automation"
+  defaultTheme: auto
+  keywords:
+    - Microsoft Azure
+    - IoT
+    - Cloud
+    - Automation
+    - Home Automation
+    - Security
+  dateFormat: "02-01-2006"
+
+  profileMode:
+    enabled: true
+    title: "Jean-Paul van Ravensberg"
+    subtitle: "Posts on Microsoft Azure, IoT, Security & Automation"
+    imageUrl: "/images/profile/jean-paul_van_ravensberg.jpeg"
+    imageTitle: "Jean-Paul van Ravensberg"
+    buttons:
+      - name: Posts
+        url: /posts/
+      - name: Tags
+        url: /tags/
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/DevSecNinja"
+    - name: linkedin
+      url: "https://linkedin.com/in/jvravensberg"
+    - name: x
+      url: "https://x.com/DevSecNinja"
+    - name: rss
+      url: "/index.xml"
+
+  ShowToc: true
+  ShowCodeCopyButtons: true
+  ShowBreadCrumbs: true
+  ShowPostNavLinks: true
+  ShowShareButtons: true
+  ShowReadingTime: true
+  ShowWordCount: false
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys:
+      - title
+      - permalink
+      - summary
+      - content
+
+  cover:
+    linkFullImages: true
+
+  author: "Jean-Paul van Ravensberg"
+
+  assets:
+    favicon: "/favicon.ico"
+    favicon16x16: "/favicon-16x16.png"
+    favicon32x32: "/favicon-32x32.png"
+    apple_touch_icon: "/apple-touch-icon.png"
+    safari_pinned_tab: "/safari-pinned-tab.svg"
+
+menu:
+  main:
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 1
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 2
+    - identifier: speaking
+      name: Speaking
+      url: /speaking/
+      weight: 3
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 4
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 5
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+markup:
+  highlight:
+    noClasses: false

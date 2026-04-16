@@ -1,0 +1,10 @@
+---
+rules:
+  dangerous-triggers:
+    ignore:
+      # actions/labeler requires pull_request_target to label PRs from forks
+      - labeler.yml
+  template-injection:
+    ignore:
+      # steps.pages.outputs.base_url is a trusted GitHub Pages output
+      - deploy.yml
