@@ -28,7 +28,7 @@ jobs:
           install: true
           cache: false
           # renovate: datasource=github-releases depName=jdx/mise
-          version: 2026.4.15
+          version: 2026.4.16
 
       - name: Generate release notes
         run: mise exec -- git-cliff --latest --strip all > /tmp/release-notes.md
